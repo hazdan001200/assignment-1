@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#" id="signin-form"onsubmit="event.preventDefault(); users();">
+        <div class="input-box">
+            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+            <input type="text" id="phone" required>
+            <label>Phone Number</label> </div>
+
+        <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" id="password">
+            <label>Password</label>
+        </div>
+
+    <div class="remember-forgot">
+        <label><input type="checkbox">Remember me</label>
+        <a href="forgot-password.html" class="color">forgot password</a>
+    </div>
+
+    <div class="btn">
+        <button type="submit" class="btn" id="btn" onclick="users();">Login</button>
+     </div>
+
+     <!--<div class="login-register"><p> Dont have an account? <a href="#" class="register-links">Register</a></p>
+     </div>-->
+
+        </form>
+        <p id="error-message" style="color: gold; display: none;">Please enter valid username and password!</p>
+    </div>
+
+    <div class="message" id="signin-message"></div>
+    </div>
+
+  <script src="login.js"></script>
+    
+</body>
+</html>
